@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="Sample Book" content="book" />
+    <title>The Code Book</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="turn.js"></script>
+    <style>
+        body {
+            overflow: hidden;
+            background-image: url(./Assets/bg3.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        #title {
+            padding: 15px;
+            width: 45%;
+            left: 25%;
+            top: 10%;
+            bottom: 1%;
+            position: relative;
+            height: 150px;
+            color: #027abb;
+            font-size: 1.8rem;
+            text-align: center;
+            background-color: white;
+        }
+
+        #by {
+            margin: 0;
+            font: 1.5rem;
+        }
+
+        #header {
+            margin: 10px;
+        }
+
+        #book {
+            margin: 2% auto;
+            width: 1728px;
+            height: 629px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title">
+        <h1 id="header">Magazine Template</h1>
+        <p id="by">Dynamic Page-Corner Book : Jquery and Turn.js Libraries</p>
+    </div>
+    <div id="book">
+        <div style="background-image: url(&quot./Assets/title.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/4.jpg&quot);"></div>
+
+        <div style="background-image: url(&quot./Assets/3.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/5.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/1.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/2.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/4.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/4.jpg&quot);"></div>
+
+        <div style="background-image: url(&quot./Assets/3.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/5.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/1.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/2.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/4.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/4.jpg&quot);"></div>
+
+        <div style="background-image: url(&quot./Assets/3.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/5.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/1.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/2.jpg&quot);"></div>
+        <div style="background-image: url(&quot./Assets/4.jpg&quot);"></div>
+
+        <div id="root"></div>
+
+        <script>$(document).ready($('#book').turn({ gradients: true, acceleration: true }));</script>
+</body>
+
+</html>
